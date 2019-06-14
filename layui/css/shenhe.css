@@ -1,0 +1,24 @@
+
+.dp_bt{
+    margin-top: 20px;
+}
+.shen_list{
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: 400px;
+}
+.shen_list li{
+padding: 20px 0;
+    text-align: left;
+}
+.fu_{
+    display: inline-block;
+    width: 100px;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.zhen_img{
+    width: 300px;
+    height: 200px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/layui.css" media="all">
+    <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+    <link rel="stylesheet" href="css/shenhe.css">
+    <style>
+        .dp_bt {
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="dp_bt">店铺审核</p>
+
+
+    <ul class="shen_list">
+        <li>
+            <span class="fu_">户主名：</span>
+            <span>胡歌</span>
+        </li>
+        <li>
+            <span class="fu_">店铺名：</span> <span>胡歌的小店</span>
+        </li>
+        <li>
+            <span class="fu_"> 联系电话：</span> <span>12412412412</span>
+        </li>
+        <li>
+            <span class="fu_"> 身份证号码：</span> <span>1221421412412</span>
+        </li>
+        <li>
+            <span class="fu_"> 身份证正面：</span> <span><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556105140211&di=6b136cb2c84309cea856ff472a268ab0&imgtype=0&src=http%3A%2F%2Fp2.ifengimg.com%2Fa%2F2017_18%2F14c0f300ea7e13f_size204_w567_h318.png" alt="" class="zhen_img"></span>
+        </li>
+        <li>
+            <span class="fu_"> 身份证反面：</span><span><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556105140211&di=6b136cb2c84309cea856ff472a268ab0&imgtype=0&src=http%3A%2F%2Fp2.ifengimg.com%2Fa%2F2017_18%2F14c0f300ea7e13f_size204_w567_h318.png" alt="" class="zhen_img"></span>
+        </li>
+        <li>
+            <span class="fu_"> 经营范围：</span> <span>小龙虾</span>
+        </li>
+    </ul>
+    <button class="layui-btn layui-btn-radius tong" style="margin-left:500px;margin-top: 50px;margin-bottom: 200px;">审核通过</button>
+    <button class="layui-btn layui-btn-danger layui-btn-radius"style="margin-top: 50px;margin-left: 50px;margin-bottom: 200px;">审核不通过</button>
+
+
+
+
+
+
+
+    <script src="layui.js" charset="utf-8"></script>
+    <script src="../js/jquery-1.4.4.min.js"></script>
+    <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+    <script>
+
+        $('.tong').click(function(){
+            location.href="./chanpin_list.html"
+        })
+
+    </script>
+
+</body>
+
+</html>

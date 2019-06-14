@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/layui.css" media="all">
+    <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+    <link rel="stylesheet" href="css/chanpin_list.css">
+
+</head>
+
+<body>
+ 
+    <ul class="hu_list clearfix">
+        <li>
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556094756555&di=c8066ae0d2c65f04fa8cafc47faf38dc&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F59f4f95a27ad416bf283dee0d6dd3d82e0ab0d3329c32-Bvk0tc_fw658"
+                alt="">
+            <p class="name_">商品商品名称商品名称商品名称商品名称商品名称商品名称名称</p>
+            <p class="qian">￥<span>142</span></p>
+        </li>
+        <li>
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556094756555&di=c8066ae0d2c65f04fa8cafc47faf38dc&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F59f4f95a27ad416bf283dee0d6dd3d82e0ab0d3329c32-Bvk0tc_fw658"
+                alt="">
+            <p class="name_">商品商品名称商品名称商品名称商品名称商品名称商品名称名称</p>
+            <p class="qian">￥<span>142</span></p>
+        </li>
+        <li>
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556094756555&di=c8066ae0d2c65f04fa8cafc47faf38dc&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F59f4f95a27ad416bf283dee0d6dd3d82e0ab0d3329c32-Bvk0tc_fw658"
+                alt="">
+            <p class="name_">商品商品名称商品名称商品名称商品名称商品名称商品名称名称</p>
+            <p class="qian">￥<span>142</span></p>
+        </li>
+        <li>
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556094756555&di=c8066ae0d2c65f04fa8cafc47faf38dc&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F59f4f95a27ad416bf283dee0d6dd3d82e0ab0d3329c32-Bvk0tc_fw658"
+                alt="">
+            <p class="name_">商品商品名称商品名称商品名称商品名称商品名称商品名称名称</p>
+            <p class="qian">￥<span>142</span></p>
+        </li>
+        <li>
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556094756555&di=c8066ae0d2c65f04fa8cafc47faf38dc&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F59f4f95a27ad416bf283dee0d6dd3d82e0ab0d3329c32-Bvk0tc_fw658"
+                alt="">
+            <p class="name_">商品商品名称商品名称商品名称商品名称商品名称商品名称名称</p>
+            <p class="qian">￥<span>142</span></p>
+        </li>
+       
+        <li>
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556094756555&di=c8066ae0d2c65f04fa8cafc47faf38dc&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F59f4f95a27ad416bf283dee0d6dd3d82e0ab0d3329c32-Bvk0tc_fw658"
+                alt="">
+            <p class="name_">商品商品名称商品名称商品名称商品名称商品名称商品名称名称</p>
+            <p class="qian">￥<span>142</span></p>
+        </li>
+    </ul>
+
+    <div id="demo11" style="
+    margin-left: 400px;
+"></div>
+    <script src="layui.js" charset="utf-8"></script>
+    <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+    <script>
+        layui.use(['laypage', 'layer'], function () {
+            var laypage = layui.laypage
+                , layer = layui.layer;
+            //自定义每页条数的选择项
+            laypage.render({
+                elem: 'demo11'
+                , count: 1000
+                , limit: 6
+                , limits: [1, 3, 5]
+            });
+
+        });
+
+//         function flushPage(page){
+//     var pageNum;
+//     $.get("getPageNum",function(data){
+//         pageNum=data;
+//     });
+//     $.get("getContent?page="+page,function(data){
+//         //渲染数据
+//     });
+//     layui.use(['laypage', 'layer'], function(){
+//         var laypage = layui.laypage
+//         ,layer = layui.layer;
+//         laypage({
+//             cont:'page',//容器。值可以传入元素id或原生DOM或jquery对象
+//             pages:pageNum,//把新的页数写入
+//             jump:function(obj) {//点击页数按钮触发的函数
+//                 var curr = obj.curr;//得到点击的页数
+//                 flushPage(curr);
+//             }
+//         });
+//     });
+// }
+
+
+    </script>
+
+</body>
+
+</html>
